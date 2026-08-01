@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_library">
+
+    <fragment
+        android:id="@+id/navigation_library"
+        android:name="com.windroid.emulator.ui.GameLibraryFragment"
+        android:label="@string/library"
+        tools:layout="@layout/fragment_game_library" />
+
+    <fragment
+        android:id="@+id/navigation_emulator"
+        android:name="com.windroid.emulator.ui.EmulatorFragment"
+        android:label="@string/emulator"
+        tools:layout="@layout/fragment_emulator" />
+
+    <fragment
+        android:id="@+id/navigation_archives"
+        android:name="com.windroid.emulator.ui.ArchiveExplorerFragment"
+        android:label="@string/archives"
+        tools:layout="@layout/fragment_archive_explorer" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.windroid.emulator.ui.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
