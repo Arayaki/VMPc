@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WinDroid Emulator</string>
+    
+    <!-- Navigation -->
+    <string name="library">Game Library</string>
+    <string name="emulator">Emulator</string>
+    <string name="archives">Archives</string>
+    <string name="settings">Settings</string>
+    
+    <!-- Game Library -->
+    <string name="no_games">No games</string>
+    <string name="no_games_title">No Games Installed</string>
+    <string name="no_games_description">Tap the + button to add a game archive (.zip, .rar)</string>
+    <string name="add_game">Add Game</string>
+    <string name="game_cover">Game cover image</string>
+    
+    <!-- Archive Explorer -->
+    <string name="file_icon">File icon</string>
+    <string name="extract">Extract</string>
+    <string name="extract_to">Extract To…</string>
+    <string name="view_info">View Info</string>
+    <string name="extraction_complete">Extraction complete</string>
+    <string name="extraction_failed">Extraction failed</string>
+    
+    <!-- Settings Categories -->
+    <string name="performance_settings">Performance</string>
+    <string name="graphics_settings">Graphics</string>
+    <string name="audio_settings">Audio</string>
+    <string name="storage_settings">Storage</string>
+    
+    <!-- Performance Settings -->
+    <string name="cpu_cores">CPU Cores</string>
+    <string name="cpu_cores_summary">Number of CPU cores to allocate</string>
+    <string name="ram_allocation">RAM Allocation</string>
+    <string name="ram_allocation_summary">Amount of RAM to allocate (MB)</string>
+    <string name="enable_performance_mode">Performance Mode</string>
+    <string name="enable_performance_mode_summary">Optimize system for better performance</string>
+    
+    <!-- Graphics Settings -->
+    <string name="graphics_backend">Graphics Backend</string>
+    <string name="graphics_backend_summary">Choose rendering API (Vulkan/OpenGL)</string>
+    <string name="resolution">Resolution</string>
+    <string name="resolution_summary">Display resolution for games</string>
+    <string name="fps_limit">FPS Limit</string>
+    <string name="fps_limit_summary">Maximum frames per second</string>
+    <string name="enable_vsync">VSync</string>
+    <string name="enable_vsync_summary">Synchronize framerate with display</string>
+    <string name="enable_shader_cache">Shader Cache</string>
+    <string name="enable_shader_cache_summary">Cache compiled shaders for faster loading</string>
+    
+    <!-- Audio Settings -->
+    <string name="audio_latency">Audio Latency</string>
+    <string name="audio_latency_summary">Lower values reduce delay but may cause crackling</string>
+    <string name="enable_audio_enhancement">Audio Enhancement</string>
+    <string name="enable_audio_enhancement_summary">Apply audio post-processing effects</string>
+    
+    <!-- Storage Settings -->
+    <string name="storage_location">Storage Location</string>
+    <string name="storage_location_summary">Change where games and data are stored</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="clear_cache_summary">Delete shader and texture cache files</string>
+    
+    <!-- Backup & Restore -->
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+    <string name="delete">Delete</string>
+    <string name="backup_created">Backup created successfully</string>
+    <string name="backup_restored">Backup restored successfully</string>
+    <string name="backup_failed">Backup operation failed</string>
+    
+    <!-- Game Actions -->
+    <string name="launch_game">Launch Game</string>
+    <string name="game_settings">Game Settings</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="create_backup">Create Backup</string>
+    <string name="restore_backup">Restore Backup</string>
+    <string name="confirm_uninstall">Are you sure you want to uninstall this game?</string>
+    
+    <!-- Arrays for preferences -->
+    <string-array name="cpu_cores_entries">
+        <item>1 Core</item>
+        <item>2 Cores</item>
+        <item>3 Cores</item>
+        <item>4 Cores</item>
+    </string-array>
+    
+    <string-array name="cpu_cores_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    
+    <string-array name="ram_entries">
+        <item>1024 MB</item>
+        <item>1536 MB</item>
+        <item>2048 MB</item>
+        <item>3072 MB</item>
+        <item>4096 MB</item>
+    </string-array>
+    
+    <string-array name="ram_values">
+        <item>1024</item>
+        <item>1536</item>
+        <item>2048</item>
+        <item>3072</item>
+        <item>4096</item>
+    </string-array>
+    
+    <string-array name="graphics_backend_entries">
+        <item>Vulkan</item>
+        <item>OpenGL ES 3.0</item>
+        <item>OpenGL ES 2.0</item>
+    </string-array>
+    
+    <string-array name="graphics_backend_values">
+        <item>vulkan</item>
+        <item>opengl3</item>
+        <item>opengl2</item>
+    </string-array>
+    
+    <string-array name="resolution_entries">
+        <item>640x360 (360p)</item>
+        <item>854x480 (480p)</item>
+        <item>1280x720 (720p)</item>
+        <item>1600x900 (900p)</item>
+        <item>1920x1080 (1080p)</item>
+    </string-array>
+    
+    <string-array name="resolution_values">
+        <item>640x360</item>
+        <item>854x480</item>
+        <item>1280x720</item>
+        <item>1600x900</item>
+        <item>1920x1080</item>
+    </string-array>
+    
+    <string-array name="fps_limit_entries">
+        <item>30 FPS</item>
+        <item>60 FPS</item>
+        <item>90 FPS</item>
+        <item>120 FPS</item>
+        <item>Unlimited</item>
+    </string-array>
+    
+    <string-array name="fps_limit_values">
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>0</item>
+    </string-array>
+    
+    <string-array name="audio_latency_entries">
+        <item>10 ms (Low)</item>
+        <item>20 ms (Medium)</item>
+        <item>40 ms (High)</item>
+        <item>80 ms (Safe)</item>
+    </string-array>
+    
+    <string-array name="audio_latency_values">
+        <item>10</item>
+        <item>20</item>
+        <item>40</item>
+        <item>80</item>
+    </string-array>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/performance_settings"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:key="cpu_cores"
+            android:title="@string/cpu_cores"
+            android:summary="@string/cpu_cores_summary"
+            android:entries="@array/cpu_cores_entries"
+            android:entryValues="@array/cpu_cores_values"
+            android:defaultValue="2"
+            app:iconSpaceReserved="false" />
+
+        <ListPreference
+            android:key="ram_allocation"
+            android:title="@string/ram_allocation"
+            android:summary="@string/ram_allocation_summary"
+            android:entries="@array/ram_entries"
+            android:entryValues="@array/ram_values"
+            android:defaultValue="2048"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="enable_performance_mode"
+            android:title="@string/enable_performance_mode"
+            android:summary="@string/enable_performance_mode_summary"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/graphics_settings"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:key="graphics_backend"
+            android:title="@string/graphics_backend"
+            android:summary="@string/graphics_backend_summary"
+            android:entries="@array/graphics_backend_entries"
+            android:entryValues="@array/graphics_backend_values"
+            android:defaultValue="vulkan"
+            app:iconSpaceReserved="false" />
+
+        <ListPreference
+            android:key="resolution"
+            android:title="@string/resolution"
+            android:summary="@string/resolution_summary"
+            android:entries="@array/resolution_entries"
+            android:entryValues="@array/resolution_values"
+            android:defaultValue="1280x720"
+            app:iconSpaceReserved="false" />
+
+        <ListPreference
+            android:key="fps_limit"
+            android:title="@string/fps_limit"
+            android:summary="@string/fps_limit_summary"
+            android:entries="@array/fps_limit_entries"
+            android:entryValues="@array/fps_limit_values"
+            android:defaultValue="60"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="enable_vsync"
+            android:title="@string/enable_vsync"
+            android:summary="@string/enable_vsync_summary"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="enable_shader_cache"
+            android:title="@string/enable_shader_cache"
+            android:summary="@string/enable_shader_cache_summary"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/audio_settings"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:key="audio_latency"
+            android:title="@string/audio_latency"
+            android:summary="@string/audio_latency_summary"
+            android:entries="@array/audio_latency_entries"
+            android:entryValues="@array/audio_latency_values"
+            android:defaultValue="20"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="enable_audio_enhancement"
+            android:title="@string/enable_audio_enhancement"
+            android:summary="@string/enable_audio_enhancement_summary"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/storage_settings"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="storage_location"
+            android:title="@string/storage_location"
+            android:summary="@string/storage_location_summary"
+            app:iconSpaceReserved="false" />
+
+        <Preference
+            android:key="clear_cache"
+            android:title="@string/clear_cache"
+            android:summary="@string/clear_cache_summary"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

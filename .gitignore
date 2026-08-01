@@ -1,0 +1,49 @@
+```
+# Android/Gradle
+.gradle/
+build/
+app/build/
+*.apk
+*.aar
+*.dex
+
+# Dependencies
+node_modules/
+vendor/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+.settings/
+.project
+
+# Temp files
+*.tmp
+*.temp
+*.log
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Python (if any Python files exist in project)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# System
+*.swp
+*.swo
+*~
+```
